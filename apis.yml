@@ -1,8 +1,26 @@
 aid: modern-animal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/modern-animal.png
 name: Modern Animal
-description: 'Modern Animal is a company surfaced as a portfolio company of dcm-ventures, susa-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Modern Animal is a membership-based veterinary healthcare company operating
+  physical primary and urgent care clinics across major U.S. metropolitan regions,
+  combining in-clinic visits with 24/7 virtual veterinary consultations, pharmacy
+  and prescription management, dental care, surgery, and preventive care. It runs a
+  subscription membership model (All Access, Essential, and Pay As You Go tiers) with
+  transparent, upfront pricing and a companion mobile app for booking and virtual
+  care. The company was surfaced as a portfolio company of dcm-ventures and susa-ventures.
+  Modern Animal is a consumer veterinary brand and publishes no public developer API,
+  documentation, or SDK surface as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/modern-animal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Veterinary
+- Pet Care
+- Healthcare
+- Membership
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/modern-animal-domain-security.yml
 - type: Website
   url: https://www.modernanimal.com/
+- type: Blog
+  url: https://www.modernanimal.com/blog
+- type: Pricing
+  url: https://www.modernanimal.com/pricing
+- type: TermsOfService
+  url: https://www.modernanimal.com/terms
+- type: PrivacyPolicy
+  url: https://www.modernanimal.com/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
